@@ -1,7 +1,131 @@
-/*
-    home.css: This website contains selectors only used in home.css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+body {
+    background-color: #8497aa;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #6c5ce7;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5541d7;
+}
+
+.navbar-brand {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #6c5ce7;
+    text-transform: uppercase;
+}
+
+.footer {
+    color: #666;
+}
+
+.btn {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-position: 100% 0;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, #6c5ce7, #a29bfe, #81ecec, #00cec9);
+}
+
+.btn-success {
+    background-image: linear-gradient(to right, #00b894, #55efc4, #81ecec, #00cec9);
+}
+
+.btn-danger {
+    background-image: linear-gradient(to right, #d63031, #ff7675, #fab1a0, #e17055);
+}
+
+form {
+    width: 400px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+label {
+    margin-bottom: 8px;
+    color: #6c5ce7;
+    font-weight: 700;
+}
+
+.form-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #6c5ce7;
+    text-align: center;
+}
+
+.login {
+    color: #6c5ce7;
+}
+
+.signup {
+    color: #00b894;
+}
+
+.form-group {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: 10px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #6c5ce7;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(108,92,231,.25);
+}
+
+.form-control::placeholder {
+    color: #adb5bd;
+}
